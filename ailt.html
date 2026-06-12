@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailt | Rónán Mac Con Iomaire</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Space+Grotesk:wght@300..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="scrolled">
+        <div class="header-inner">
+            <a href="index.html" class="logo">R. Mac Con Iomaire<sup>©2026</sup></a>
+            
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="mainNav">
+                <a href="index.html#moladh">
+                    <span class="lang-ga">Léirmheas</span>
+                    <span class="lang-en">Reviews</span>
+                </a>
+                <a href="index.html#leabhair">
+                    <span class="lang-ga">Leabhair</span>
+                    <span class="lang-en">Books</span>
+                </a>
+                <a href="index.html#scannain">
+                    <span class="lang-ga">Scannáin</span>
+                    <span class="lang-en">Films</span>
+                </a>
+                <a href="index.html#scribhneoireacht" class="active">
+                    <span class="lang-ga">Scríbhneoireacht</span>
+                    <span class="lang-en">Writing</span>
+                </a>
+                <a href="index.html#teagmhail">
+                    <span class="lang-ga">Teagmháil</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+                
+                <div class="lang-switch">
+                    <button id="btnGA" class="active" onclick="setLang('ga')">GA</button>
+                    <span class="sep">/</span>
+                    <button id="btnEN" onclick="setLang('en')">EN</button>
+                </div>
+            </nav>
+
+            <div class="header-meta">
+                <span class="time" id="localTime"></span>&nbsp;&nbsp;An Cheathrú Rua, IE
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="section-inner">
+            <a href="index.html#scribhneoireacht" class="back-link">←
+                <span class="lang-ga">Ar ais</span>
+                <span class="lang-en">Back</span>
+            </a>
+            <p class="micro"><span class="dot">•</span> 04.03 —
+                <span class="lang-ga">Scríbhneoireacht</span>
+                <span class="lang-en">Writing</span>
+            </p>
+            <h1 class="page-title">Ailt</h1>
+            <p class="lang-ga">Rogha ailt, scríofa agam féin nó ag daoine eile.</p>
+            <p class="lang-en">A selection of articles, written by myself or by others.</p>
+        </div>
+    </div>
+
+    <!-- Articles -->
+    <div class="writing-list ailt-list">
+        <p class="micro section-label"><span class="dot">•</span>
+            <span class="lang-ga">Scríofa agam féin</span>
+            <span class="lang-en">Written by me</span>
+        </p>
+        <div class="writing-rows">
+                <a href="https://www.intercelticforum.com/post/how-small-languages-can-shape-their-ai-future" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">01</span>
+                    <span>
+                        <h3 class="writing-row-title">How Small Languages Can Shape Their AI Future</h3>
+                        <span class="micro orange row-meta">Interceltic Business Forum · 2025 · EN</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="https://www.independent.ie/comment/opinion/irish-and-the-gaeltacht-they-havent-gone-away-you-know/a/150791456.html" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">02</span>
+                    <span>
+                        <h3 class="writing-row-title">Irish and the Gaeltacht: They haven't gone away, you know</h3>
+                        <span class="micro orange row-meta">Irish Independent · EN</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="https://tuairisc.ie/leirmheas-leathchlaonta-o-iarbhall-de-na-plandai-ar-yahu-albam-nua-ris/" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">03</span>
+                    <span>
+                        <h3 class="writing-row-title">Léirmheas leathchlaonta ó iarbhall de 'Na Plandaí' ar 'Yahú', albam nua RÍS</h3>
+                        <span class="micro orange row-meta">Tuairisc.ie · GA</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="https://www.irishtimes.com/gaeilge/tuarascail/ros-an-mhil-deis-chun-gluin-ghaeltachta-a-mhealladh-abhaile-1.4801171" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">04</span>
+                    <span>
+                        <h3 class="writing-row-title">Ros an Mhíl: Deis chun glúin Ghaeltachta 'a mhealladh abhaile'</h3>
+                        <span class="micro orange row-meta">The Irish Times, Tuarascáil · 2022 · GA</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="https://comhar.ie/iris/79/3/splanc-bheo-na-gaeltachta/" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">05</span>
+                    <span>
+                        <h3 class="writing-row-title">Splanc bheo na Gaeltachta?</h3>
+                        <span class="micro orange row-meta">Comhar · Márta 2019 · GA</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="http://www.beo.ie/alt-an-cheathru-rua.aspx" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">06</span>
+                    <span>
+                        <h3 class="writing-row-title">An Cheathrú Rua</h3>
+                        <span class="micro orange row-meta">Beo! · Meitheamh 2003 · GA</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+        </div>
+
+        <p class="micro section-label ailt-group-2"><span class="dot">•</span>
+            <span class="lang-ga">Scríofa ag daoine eile</span>
+            <span class="lang-en">Written by others</span>
+        </p>
+        <div class="writing-rows">
+                <a href="https://www.irishtimes.com/ireland/2025/01/04/a-gaeltacht-driven-movement-the-civil-rights-agitation-that-spawned-raidio-na-gaeltachta-and-tg4/" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">07</span>
+                    <span>
+                        <h3 class="writing-row-title">'A Gaeltacht-driven movement': The civil rights agitation that spawned Raidió na Gaeltachta and TG4</h3>
+                        <span class="micro orange row-meta">The Irish Times · 2025 · EN</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="https://tuairisc.ie/duais-litriochta-fheile-cuirt-buaite-ag-ronan-mac-con-iomaire/" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">08</span>
+                    <span>
+                        <h3 class="writing-row-title">Duais litríochta Fhéile Cúirt buaite ag Rónán Mac Con Iomaire</h3>
+                        <span class="micro orange row-meta">Tuairisc.ie · 2026 · GA</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="https://www.rte.ie/radio/radio1/the-history-show/episodes/11698591/" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">09</span>
+                    <span>
+                        <h3 class="writing-row-title">An Ghluaiseacht — The Gaeltacht Civil Rights Movement</h3>
+                        <span class="micro orange row-meta">RTÉ Radio 1, The History Show · 2025 · Agallamh raidió</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+                <a href="https://comhar.ie/iris/85/10/25-rocky-ros-muc/" target="_blank" rel="noopener" class="writing-row ailt-row">
+                    <span class="row-num">10</span>
+                    <span>
+                        <h3 class="writing-row-title">Rocky Ros Muc: 25 Leabhar Is Fearr - 2000-2025</h3>
+                        <span class="micro orange row-meta">Comhar</span>
+                    </span>
+                    <span class="row-arrow">↗</span>
+                </a>
+        </div>
+    </div>
+
+    <footer style="background: var(--ink); color: var(--cream); padding: 2rem var(--pad); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; display: flex; justify-content: space-between; gap: 2rem;">
+        <p>© 2026 Rónán Mac Con Iomaire</p>
+        <a href="index.html#scribhneoireacht" style="color: inherit; text-decoration: none;">
+            <span class="lang-ga">Ar ais</span>
+            <span class="lang-en">Back</span> ↑
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

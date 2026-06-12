@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rónán Mac Con Iomaire — Scéalta ón nGaeltacht</title>
+    <meta name="description" content="Scéalta ón nGaeltacht — Stories from the Gaeltacht. Books, films and writing by Rónán Mac Con Iomaire from Connemara, Ireland.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Space+Grotesk:wght@300..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">R. Mac Con Iomaire<sup>©2026</sup></a>
+            
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="mainNav">
+                <a href="#moladh">
+                    <span class="lang-ga">Léirmheas</span>
+                    <span class="lang-en">Reviews</span>
+                </a>
+                <a href="#leabhair">
+                    <span class="lang-ga">Leabhair</span>
+                    <span class="lang-en">Books</span>
+                </a>
+                <a href="#scannain">
+                    <span class="lang-ga">Scannáin</span>
+                    <span class="lang-en">Films</span>
+                </a>
+                <a href="#scribhneoireacht">
+                    <span class="lang-ga">Scríbhneoireacht</span>
+                    <span class="lang-en">Writing</span>
+                </a>
+                <a href="#teagmhail">
+                    <span class="lang-ga">Teagmháil</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+                
+                <div class="lang-switch">
+                    <button id="btnGA" class="active" onclick="setLang('ga')">GA</button>
+                    <span class="sep">/</span>
+                    <button id="btnEN" onclick="setLang('en')">EN</button>
+                </div>
+            </nav>
+
+            <div class="header-meta">
+                <span class="time" id="localTime"></span>&nbsp;&nbsp;An Cheathrú Rua, IE
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+            <p class="micro hero-eyebrow">
+                <span class="dot">•</span>
+                <span class="lang-ga">Údar &amp; Craoltóir</span>
+                <span class="lang-en">Author &amp; Broadcaster</span>
+            </p>
+            <h1>
+                <span class="hero-name-1">RÓNÁN</span>
+                <span class="hero-name-2-row">
+                    <span class="hero-tagline">
+                        <span class="lang-ga">Scéalta ón nGaeltacht —<br>ó Chonamara go Boston.</span>
+                        <span class="lang-en">Stories from the Gaeltacht —<br>from Connemara to Boston.</span>
+                    </span>
+                    <span class="hero-name-2">Mac Con Iomaire</span>
+                </span>
+            </h1>
+        </div>
+            <div class="hero-bottom">
+            <p class="micro coords"><span class="dot">•</span> 53.2644° N / 9.6056° W</p>
+            <p class="micro">
+                <span class="lang-ga">Scrollaigh</span>
+                <span class="lang-en">Scroll</span> ↓
+            </p>
+        </div>
+    </section>
+
+    <!-- Tide divider -->
+    <div class="tide-divider" aria-hidden="true">
+        <canvas id="tideCanvas"></canvas>
+    </div>
+
+    <!-- Moladh / Praise -->
+    <section id="moladh">
+        <div class="section-inner">
+            <p class="micro section-label"><span class="dot">•</span> 01 —
+                <span class="lang-ga">Léirmheas</span>
+                <span class="lang-en">Reviews</span>
+            </p>
+            <h2 class="section-heading">
+                <span class="lang-ga">Léirmheasanna ó <em>chian agus ó chóngar.</em></span>
+                <span class="lang-en">Reviews from <em>near and far.</em></span>
+            </h2>
+
+            <blockquote class="lead-quote" data-reveal>
+                "A highlight [of 2025] is Rónán Mac Con Iomaire's An Ghluaiseacht... Mac Con Iomaire <em>writes like a novelist,</em> ensuring the history is riveting."
+            </blockquote>
+            <p class="quote-cite" data-reveal>— Eilís Ní Dhuibhne, <strong>Irish Times</strong></p>
+
+            <div class="quote-grid">
+                <div class="quote-cell" data-reveal>
+                    <p>"One doesn't need to be into pugilism to appreciate Rocky Ros Muc, a documentary that is as much about roots and identity as it is a portrait of Irish American boxer Sean Mannion."</p>
+                    <p class="quote-cite">— Michael Rechtshaffen, <strong>Los Angeles Times</strong></p>
+                </div>
+                <div class="quote-cell" data-reveal>
+                    <p>"The book is beautifully written, unerringly researched &amp; utterly gripping from start to finish."</p>
+                    <p class="quote-cite">— Dave O'Connell, <strong>Connacht Tribune</strong></p>
+                </div>
+                <div class="quote-cell" data-reveal>
+                    <p>"Rónán Mac Con Iomaire has produced a book on the life of Seán Mannion that is simply a triumph in sportswriting and dramatic storytelling."</p>
+                    <p class="quote-cite">— Conan Doherty, <strong>SportsJoe.ie</strong></p>
+                </div>
+                <div class="quote-cell" data-reveal>
+                    <p>"In The Man Who Was Never Knocked Down, Rónán Mac Con Iomaire has captured Seán Mannion's essence. It is satisfyingly life-affirming."</p>
+                    <p class="quote-cite">— Kevin Cullen, <strong>The Boston Globe</strong></p>
+                </div>
+            </div>
+
+            <figure class="moladh-photo" data-reveal>
+                <img src="images/portrait-conamara.jpg" alt="Rónán Mac Con Iomaire in Connemara" loading="lazy">
+                <figcaption class="micro"><span class="dot">•</span>
+                    Rónán Mac Con Iomaire
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Leabhair / Books -->
+    <section id="leabhair">
+        <div class="section-inner">
+            <p class="micro section-label"><span class="dot">•</span> 02 —
+                <span class="lang-ga">Leabhair</span>
+                <span class="lang-en">Books</span>
+            </p>
+            <h2 class="section-heading">
+                <span class="lang-ga">Trí leabhar, <em>trí scéal.</em></span>
+                <span class="lang-en">Three books, <em>three stories.</em></span>
+            </h2>
+
+            <div class="books-grid">
+                <a class="book" href="leabhar-rocky-ros-muc.html" data-reveal data-cursor-ga="Léigh" data-cursor-en="Read">
+                    <div class="book-cover">
+                        <img src="images/rocky-ros-muc-cover.jpg" alt="Rocky Ros Muc book cover" loading="lazy">
+                    </div>
+                    <div class="book-meta">
+                        <h3 class="book-title">Rocky Ros Muc</h3>
+                        <span class="micro orange">2013</span>
+                    </div>
+                    <p class="lang-ga">Scéal Sheáin Uí Mhainnín — an dornálaí a d'fhág Ros Muc agus a bhain clú amach i mBostún. An leabhar Gaeilge is mó díol riamh.</p>
+                    <p class="lang-en">The story of Seán Mannion — the boxer who left Ros Muc and made his name in Boston. The fastest-selling Irish language book of all time.</p>
+                </a>
+
+                <a class="book" href="leabhar-never-knocked-down.html" data-reveal data-cursor-ga="Léigh" data-cursor-en="Read">
+                    <div class="book-cover">
+                        <img src="images/never-knocked-down-cover.jpg" alt="The Man Who Was Never Knocked Down book cover" loading="lazy">
+                    </div>
+                    <div class="book-meta">
+                        <h3 class="book-title">The Man Who Was Never Knocked Down</h3>
+                        <span class="micro orange">2018</span>
+                    </div>
+                    <p class="lang-ga">Beathaisnéis an dornálaí iomráitigh Seán Ó Mainnín ó Ros Muc, a bhí ar dhuine de na dornálaithe Éireannacha is fearr riamh.</p>
+                    <p class="lang-en">The biography of the legendary boxer Seán Mannion from Ros Muc, one of the greatest Irish boxers of all time.</p>
+                </a>
+
+                <a class="book" href="leabhar-an-ghluaiseacht.html" data-reveal data-cursor-ga="Léigh" data-cursor-en="Read">
+                    <div class="book-cover">
+                        <img src="images/an-ghluaiseacht-cover.jpg" alt="An Ghluaiseacht book cover" loading="lazy">
+                    </div>
+                    <div class="book-meta">
+                        <h3 class="book-title">An Ghluaiseacht</h3>
+                        <span class="micro orange">2024</span>
+                    </div>
+                    <p class="lang-ga">Scéal chearta sibhialta na Gaeltachta — na daoine a sheas suas ar son a gceart agus a dteanga.</p>
+                    <p class="lang-en">The story of the Gaeltacht civil rights movement — the people who stood up for their rights and their language.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scannáin / Documentaries -->
+    <section id="scannain">
+        <div class="section-inner">
+            <p class="micro section-label"><span class="dot">•</span> 03 —
+                <span class="lang-ga">Scannáin</span>
+                <span class="lang-en">Documentaries</span>
+            </p>
+            <h2 class="section-heading">
+                <span class="lang-ga">Ceithre scannán, <em>ceithre shaol.</em></span>
+                <span class="lang-en">Four films, <em>four lives.</em></span>
+            </h2>
+
+            <div class="films-grid">
+                <article class="film" data-reveal data-cursor-ga="Féach" data-cursor-en="View" onclick="openVideo('9-PjnwVfmlo')">
+                    <div class="film-thumb">
+                        <img src="https://i.ytimg.com/vi/9-PjnwVfmlo/maxresdefault.jpg" alt="Rocky Ros Muc documentary" loading="lazy">
+                        <div class="film-play"></div>
+                    </div>
+                    <div class="film-meta">
+                        <h3 class="film-title">Rocky Ros Muc</h3>
+                        <span class="micro orange">
+                            <span class="lang-ga">Scannán Fada</span>
+                            <span class="lang-en">Feature</span>
+                        </span>
+                    </div>
+                    <p class="lang-ga">Scannán faisnéise faoi Sheán Ó Mainnín, an dornálaí ó Ros Muc a throid ar son teideal domhanda.</p>
+                    <p class="lang-en">A documentary about Seán Mannion, the boxer from Ros Muc who fought for a world title.</p>
+                </article>
+
+                <article class="film" data-reveal data-cursor-ga="Féach" data-cursor-en="View" onclick="openVideo('OXYpmUfhbfY')">
+                    <div class="film-thumb">
+                        <img src="images/tralear-thumb.jpg" alt="Tráléar documentary" loading="lazy">
+                        <div class="film-play"></div>
+                    </div>
+                    <div class="film-meta">
+                        <h3 class="film-title">Tráléar</h3>
+                        <span class="micro orange">
+                            <span class="lang-ga">Clár Faisnéise</span>
+                            <span class="lang-en">Documentary</span>
+                        </span>
+                    </div>
+                    <p class="lang-ga">Clár faisnéise breathnaitheach faoin saol ar bord trálaer iascaireachta Éireannach.</p>
+                    <p class="lang-en">An observational documentary about life aboard an Irish fishing trawler.</p>
+                </article>
+
+                <article class="film" data-reveal data-cursor-ga="Féach" data-cursor-en="View" onclick="openVideo('zN3B5ue8rhI')">
+                    <div class="film-thumb">
+                        <img src="images/saighdiur-thumb.jpg" alt="Saighdiúr documentary" loading="lazy">
+                        <div class="film-play"></div>
+                    </div>
+                    <div class="film-meta">
+                        <h3 class="film-title">Saighdiúr</h3>
+                        <span class="micro orange">
+                            <span class="lang-ga">Clár Faisnéise</span>
+                            <span class="lang-en">Documentary</span>
+                        </span>
+                    </div>
+                    <p class="lang-ga">Scéal na nÉireannach a throid sa Dara Cogadh Domhanda.</p>
+                    <p class="lang-en">The story of the Irish people who fought in World War II.</p>
+                </article>
+
+                <article class="film" data-reveal data-cursor-ga="Féach" data-cursor-en="View" onclick="openVideo('5wDaM_ySsqw')">
+                    <div class="film-thumb">
+                        <img src="images/uefa-thumb.jpg" alt="UEFA sa Ghaeltacht documentary" loading="lazy">
+                        <div class="film-play"></div>
+                    </div>
+                    <div class="film-meta">
+                        <h3 class="film-title">UEFA sa Ghaeltacht</h3>
+                        <span class="micro orange">
+                            <span class="lang-ga">Clár Faisnéise</span>
+                            <span class="lang-en">Documentary</span>
+                        </span>
+                    </div>
+                    <p class="lang-ga">Scéal chluiche Corn UEFA 1986 a imríodh sa Cheathrú Rua, sráidbhaile beag Gaeltachta i gConamara.</p>
+                    <p class="lang-en">The story of the 1986 UEFA Cup match played in An Cheathrú Rua, a small Gaeltacht village in Connemara.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scríbhneoireacht / Writing -->
+    <section id="scribhneoireacht">
+        <div class="section-inner">
+            <p class="micro section-label"><span class="dot">•</span> 04 —
+                <span class="lang-ga">Scríbhneoireacht</span>
+                <span class="lang-en">Writing</span>
+            </p>
+            <h2 class="section-heading">
+                <span class="lang-ga">Agallaimh, amhráin <em>agus ailt.</em></span>
+                <span class="lang-en">Dialogues, songs <em>and articles.</em></span>
+            </h2>
+
+            <div class="writing-rows">
+                <a href="agallaimh-beirte.html" class="writing-row" data-reveal>
+                    <span class="row-num">01</span>
+                    <h3 class="writing-row-title">Agallaimh Beirte &amp; Rannta</h3>
+                    <span class="row-arrow">→</span>
+                </a>
+
+                <a href="amhrain.html" class="writing-row" data-reveal>
+                    <span class="row-num">02</span>
+                    <h3 class="writing-row-title">
+                        <span class="lang-ga">Amhráin</span>
+                        <span class="lang-en">Songs</span>
+                    </h3>
+                    <span class="row-arrow">→</span>
+                </a>
+
+                <a href="ailt.html" class="writing-row" data-reveal>
+                    <span class="row-num">03</span>
+                    <h3 class="writing-row-title">
+                        <span class="lang-ga">Ailt</span>
+                        <span class="lang-en">Articles</span>
+                    </h3>
+                    <span class="row-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teagmháil / Contact (dark) -->
+    <section id="teagmhail">
+        <div class="section-inner">
+            <p class="micro section-label"><span class="dot">•</span> 05 —
+                <span class="lang-ga">Fúm &amp; Teagmháil</span>
+                <span class="lang-en">About &amp; Contact</span>
+            </p>
+            <h2 class="section-heading">
+                <span class="lang-ga">Cuir scéala <em>chugam.</em></span>
+                <span class="lang-en">Get <em>in touch.</em></span>
+            </h2>
+
+            <div class="contact-grid">
+                <div class="contact-bio" data-reveal>
+                    <div class="lang-ga">
+                        <p>Is údar agus craoltóir é Rónán Mac Con Iomaire <em>as an gCeathrú Rua</em> i gConamara. Tá trí leabhar foilsithe aige agus ceithre chlár faisnéise déanta.</p>
+                        <p class="bio-awards">Insíonn a chuid oibre scéalta faoi dhaoine agus faoi phobail na Gaeltachta — ón dornálaí Seán Ó Mainnín go <em>gluaiseacht chearta sibhialta</em> na Gaeltachta.</p>
+                        <p class="bio-awards">Tá gradaim bainte amach aige as a shaothar, ina measc ESB National Media Award agus Duais an Oireachtais as a chuid iriseoireachta; Duais Nuascríbhneoireachta ag Féile Litríochta Idirnáisiúnta Cúirt agus Gradam Scríbhneoireachta an Oireachtais as a chuid scríbhneoireachta; agus dá chuid saothar scannánaíochta, Clár Faisnéise is Fearr ag an Galway Film Fleadh, Clár Faisnéise is Fearr ag an Irish Film Festival Boston, Clár Faisnéise Spóirt is Fearr ag Féile na Meán Ceilteach agus fadliostáilte don Chlár Faisnéise is Fearr ag na <em>Academy Awards</em>.</p>
+                    </div>
+                    <div class="lang-en">
+                        <p>Rónán Mac Con Iomaire is an author and broadcaster from <em>An Cheathrú Rua</em> in Connemara, Ireland. He has published three books and produced four documentaries.</p>
+                        <p class="bio-awards">His work tells stories of Gaeltacht people and communities — from boxer Seán Mannion to the Gaeltacht <em>civil rights movement.</em></p>
+                        <p class="bio-awards">His work has won numerous awards, including an ESB National Media Award and an Oireachtas award for his journalism; the New Writing Prize at the Cúirt International Festival of Literature and Gradam Scríbhneoireachta an Oireachtais for his writing; and, for his films, Best Documentary at the Galway Film Fleadh, Best Documentary at the Irish Film Festival Boston, Best Sports Documentary at the Celtic Media Festival, and a longlisting for Best Documentary at the <em>Academy Awards</em>.</p>
+                    </div>
+                </div>
+
+                <div data-reveal>
+                    <a href="#" class="contact-email" id="emailLink" aria-label="Ríomhphost / Email">&#8203;</a>
+                    <noscript><span class="contact-email">ronan [ag] macconiomaire [ponc] com</span></noscript>
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/ronan.macconiomaire" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://twitter.com/ronanmaccon" target="_blank" rel="noopener">Twitter / X</a></li>
+                        <li><a href="https://www.linkedin.com/in/rónán-mac-con-iomaire-68535a65/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCCH6YHisNIEd1YidjYm5Y1A" target="_blank" rel="noopener">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-line">
+                <p>© 2026 Rónán Mac Con Iomaire —
+                    <span class="lang-ga">Gach ceart ar cosaint</span>
+                    <span class="lang-en">All rights reserved</span>
+                </p>
+                <a href="#home">
+                    <span class="lang-ga">Ar ais go barr</span>
+                    <span class="lang-en">Back to top</span> ↑
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVideo()">&times;</button>
+            <iframe id="videoFrame" src="" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

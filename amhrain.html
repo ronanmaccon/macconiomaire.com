@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amhráin | Rónán Mac Con Iomaire</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Space+Grotesk:wght@300..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="scrolled">
+        <div class="header-inner">
+            <a href="index.html" class="logo">R. Mac Con Iomaire<sup>©2026</sup></a>
+            
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="mainNav">
+                <a href="index.html#moladh">
+                    <span class="lang-ga">Léirmheas</span>
+                    <span class="lang-en">Reviews</span>
+                </a>
+                <a href="index.html#leabhair">
+                    <span class="lang-ga">Leabhair</span>
+                    <span class="lang-en">Books</span>
+                </a>
+                <a href="index.html#scannain">
+                    <span class="lang-ga">Scannáin</span>
+                    <span class="lang-en">Films</span>
+                </a>
+                <a href="index.html#scribhneoireacht" class="active">
+                    <span class="lang-ga">Scríbhneoireacht</span>
+                    <span class="lang-en">Writing</span>
+                </a>
+                <a href="index.html#teagmhail">
+                    <span class="lang-ga">Teagmháil</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+                
+                <div class="lang-switch">
+                    <button id="btnGA" class="active" onclick="setLang('ga')">GA</button>
+                    <span class="sep">/</span>
+                    <button id="btnEN" onclick="setLang('en')">EN</button>
+                </div>
+            </nav>
+
+            <div class="header-meta">
+                <span class="time" id="localTime"></span>&nbsp;&nbsp;An Cheathrú Rua, IE
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="section-inner">
+            <a href="index.html#scribhneoireacht" class="back-link">←
+                <span class="lang-ga">Ar ais</span>
+                <span class="lang-en">Back</span>
+            </a>
+            <p class="micro"><span class="dot">•</span> 04.02 —
+                <span class="lang-ga">Scríbhneoireacht</span>
+                <span class="lang-en">Writing</span>
+            </p>
+            <h1 class="page-title">
+                <span class="lang-ga">Amhráin <em>nuachumtha</em></span>
+                <span class="lang-en">Songs <em>newly written</em></span>
+            </h1>
+            <p class="lang-ga">Dhá amhrán a scríobh mé, agus físeán ceoil a chruthaigh mé.</p>
+            <p class="lang-en">Two songs I've written, and a music video I created.</p>
+        </div>
+    </div>
+
+    <!-- Writing List -->
+    <div class="writing-list">
+
+        <!-- An Sloinne (2024) - WITH VIDEO -->
+        <article class="writing-item">
+            <div class="writing-item-header" onclick="toggleWritingItem(this)">
+                <h3>An Sloinne <span class="year">(2024)</span> <span style="color: var(--color-accent);">▶</span></h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="writing-item-content">
+                <div class="video-embed">
+                    <iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zaa8Q23uER8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p style="margin-bottom: 1.5rem; color: var(--color-text-light);"><em>Fonn: Ím Bím Bobaró</em></p>
+                <div class="writing-text">M-A-C-C-O-N-I-O-M-A-I-R-E
+Tá sloinne agam atá chomh místuama,
+gan trácht ar spásanna
+Agus M-A-C Spás C-O-N Spás I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Caitheann mé ceathrú cuid den bhliain
+dhá litriu arís is arís
+Agus M-A-C-C-O-N, N as in Noel, I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Bhí mé leath-uair ar an fón inné
+Dhá litriú, ó briseadh croí
+Agus M-A-C Another Word C-O-N And one more word I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+What is that in English,
+I bet it's McNamara a deir sí,
+Agus M-A-C C-O-N There's no English for it a deir mé -I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Tá fhios ag a lá gurb é Ronny Ridge bheadh handy
+ach go mbeadh an sean leaid ina ísle brí
+Agus R-O-N-N-Y-R-I-D-G-E ísle brí
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Níl na Gaeil mórán níos fearr,
+Iad dhá mhí-litriú go síoraí
+Agus M-A-C-A-N? I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Seolaim comhfhreagras leis an litriú ceart
+Ach tagann sé ar ais mar ó Dhia ceartaithe
+Agus M-A-C-C-O-N- cé againn is measa I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Caithfidh sé mura bhfuil mé, in ann m'ainm litriú
+Go gceapann siad go bhfuil mé cineáilín simplí
+Agus M-A-C-C-O-N- ni A-N-I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Bíonn sé ina chraic ag bean an phosta
+Nuair a fheiceann sí mo chuid litreachaí
+Agus M-A-C-céibí céard a cheapfann tú féin-M-A-I-R-E
+Le chuile shórt orthu ach mac Con Iomaire
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Chaith sí coicís ag iarraidh a dhéanamh amach
+Cé aige a ghabhadh litir do Mister Lomarlee
+Agus L-O-M- níl mé ag magadh - A-R-L-E-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Is ar mo mhama atá an mhilleán i ndáríre
+De bharr an té a phós sí
+Le sloinne M-A-C-C-O-N-I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Mór an mhaith nach double-barrel baistiú fuair mé
+Nó bheadh an t-amhrán níos faide ná an Bonnán Buí / Cúirt an tSrutháin Bhí
+Agus M-A-C-D-O-N-N-C-H-A-M-A-C-C-O-N-I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Ach dá bpósadh sí Smyth nó McDonald
+Ní bheadh mo shaol ina bhriseadh croí
+Ag litriú M-A-C-C-O-N-I-O-M-A-I-R-E
+
+M-A-C-C-O-N-I-O-M-A-I-R-E
+Cé gurb shin deireadh le mo amhrán
+Tugaigí áird ar mo achainní
+Agus litrigh é M-A-C-C-O-N-I-O-M-A-I-R-E</div>
+            </div>
+        </article>
+
+        <!-- An tIarrthóir (2009) -->
+        <article class="writing-item">
+            <div class="writing-item-header" onclick="toggleWritingItem(this)">
+                <h3>An tIarrthóir <span class="year">(2009)</span></h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="writing-item-content">
+                <p style="margin-bottom: 1.5rem; color: var(--color-text-light);"><em>Fonn: Pluid Dhorcha Leára</em></p>
+                <div class="writing-text">Ó, a chairde Gael,
+Fan go gcloisfidh sibh scéal
+Faoin bhliain seo atá caite agam trí chéile
+Gan pingin agam ag teacht isteach
+Ach go síoraí ag íoc amach
+Agus go dona agam luach a cheannódh greim béile
+
+Thosaigh an bhliain go maith,
+Mé ag baint tairbhe as an rath
+Ag tógáil mansions ar fud Chonamara
+Ar dhá euro caoga an bloc
+Gur thit rudaí ina gcac
+Agus gan gnó anois agam don lián ná don bharra
+
+Agus nuair a thosaigh an Anglo-Irish
+Mo thabhairt chun cúirte ar thóir saibhreas,
+Bhí a fhios agam go raibh ioncam nua ag teastáil
+Jab le stádas agus seasamh
+Agus b'fhéidir deis coimhlint leasa
+A chinnteodh neart tithe agam le tógáil
+
+Is ansin a chuimhníos
+Go raibh toghcháin ag teacht aníos
+Céard a sháródh ról mar Chomhairleoir Contae?
+Le pá a bheadh buan
+Agus costaisí faoi rún
+Dhá mbeinn tofa, le mo chuid trioblóidí bheinn réidh
+
+Bhí plean agam do m'fheachtas
+Nach mbeinn i bhfad ag dul i gcleachtadh
+Ar a bheith ag déanamh gealltúnais áiféiseacha aisteach
+Gheallfainn go mbeadh deontais Gaeltachta ann ariamh
+Gheallfainn freagraí díreach ó Ó Cuív
+Gheallfainn Samhraidh gan gaoth ná báisteach
+
+'S nuair a gheobhainn mé féin istigh
+Ní rún a rithfinn ach fiche
+Go mbeadh athzónáil déanta ar fud Chonamara
+Thógfainn óstáin i Seanacamheas
+Ba chuma muna mbeidís an-deas
+'S nach skyscrapers atá de dhíth orthu i gCarna
+
+Nuair a bheinn réidh le hAill na nGraí
+Ni bheadh a shamhail ach Dubai
+Thógfainn tithe go mbeidís ag cuimilt na spéire
+Ni bheadh aon chuid de Chonamara
+Nach mbeadh curtha agam faoi thearra
+Dul chun cinn a dtuigeann sibh, a d'fhágfadh agamsa euro no péire
+
+Zónáilfinn casinos ar an Máimín
+Thógfainn condos ar an Tuairín
+Dea-nuacht d'Acadamh na hOllscolaíochta Gaeilge
+Mar go mbeadh croupiers le cáiliú
+Agus cúrsaí chun concierges a sholáthrú
+Le go ndéanfainn Vegas den Spidéal de réir a chéile
+
+Bheadh m'fheachtas go hálainn
+Ní bheadh aon bhlas nach ngeallfainn
+Sásamh saoil ar vóta céad rogha
+Ar vóta a haon nó uimhir a dó
+Gheallfainn uimhreacha an Lotto
+Gheallfainn pórtar, gheallfainn leigheas ar an bpóit duit
+
+Bheinn ar raidió is ar teilí
+Ní bheadh tada ag Machiavelli
+Ar na sceana a bheadh feannta agam go síoraí
+Bheinn chuile lá ar Iris Aniar
+Ag inseacht scéalta nach raibh fíor
+Agus ag cur an pionna i mo chuid co-iarrathóirí
+
+Ar Sheosamh Ó Cuaig
+Sea chuirfinn an ruaig
+Agus bheadh Seán Ó Tuairisg é féin fágtha gan vóta
+Bheartaigh mé Connie Ní Fhátharta
+A ghlanadh amach i nDoire Fhearta
+'S ní fheicfeadh méit Ruairí Ó Brádaigh aon chuóta
+
+Thosaigh mé ag stocaireacht
+Ach sé'n chaoi chríochnaigh mé ag cocaireacht
+Le chuile shean-leaid ar fud Chonamara
+"An gcuirfidh tú teara ar mo bhóthar?"
+"Tyre nua ar mo rothar?"
+Bhí fear amháin ag lorg strip joint i gCarna
+
+Ach Ros Muc a bhrú
+An t-éileamh ba mhó
+A chuir ormsa fonn múisce agus alltacht
+"Níl an teanga seo go maith", a deir siad
+"Tá an Ghaeilge gan rath" a deir siad
+Tá muide ag iarraidh dul isteach ins an nGalltacht
+
+Gheall mé i Muighnis
+Go dtógfainn highway go Fínis,
+Bhí Leitir Móir ar thóir neamhspleáchas
+Chuirfinn traein soir Conamara
+Chomh fada le Bearna
+Agus go Gaillimh nuair a d'fhilleadh an rachmas
+
+Mhionnaigh mé in Inis Bearacháin
+Go mbronnfainn stádas saor ó cháin
+Bheadh sé ina Cayman Islands amach ó Leitir Caladh
+Agus nuair a cheistigh mo fhreasúra
+Céard a d'íocfadh as mo chuid pleananna
+Ní raibh mé i bhfad ag caitheamh corr spaladh
+
+Josie Cooke, níl ionad ach Red
+Tá níos mó polasaithe ag Father Ted
+Ní túisce neamhspleách ná Fianna Fáil Séamus Breathnach
+Agus má chloisim aon chaint faoi pholasaí teanga
+Nó coinníollacha Gaeilge, beidh mé le ceangal
+Sé'n chaoi go bhfágfaidh siad sin muid ar ais ag baint chreathnach
+
+Bhí mo chuid postaeraí go breá
+Chroch mé leath-chéad nua acu chuile lá
+Bhí mo theachtaireacht intuigthe ar fud chuile bhaile
+"Vote number one for me
+And I'll look after you, Tír an Fhia"
+Ní raibh ceist ar bith go bhféadfainn an toghchán seo a chailleadh
+
+Tháinig lá an vóta mór
+Hireáil mé bus Noel Phat Mór
+Gur fholmhaigh mé chuile theach altranais siar ó Ghaillimh
+Gealladh gur vóta a haon domsa a thabharfaidís
+Agus péire dá bhféadfaidís
+Nar gealladh trí chuóta dom níos gaire do bhaile
+
+Maidir le mo chuid gaolta 's
+Nach raibh an oiread vótaí ann a thoghfadh rialtas
+Agus ba agamsa ar fad a bhí siad geallta
+Mar gheall mé jabanna agus cead pleanála dóibh
+Chomh maith le junkets amach go dtí an Róimh
+B'fhurusta a chinntiú go raibh a dtacaíocht meallta
+
+Bhuel, tháinig lá an chomhairimh
+Bhí mé cinnte de scór vóta i nGleann an Fhir Mhairbh
+B'fhada liom go n-oscólfaí na boscaí
+Thug mé liom beirt fhir mhóra ón tSualainn
+Le nach dtitfinn anuas óna ngualainn
+Nuair a chrochfaí in airde mé ar uair an bhuacaí
+
+I gceantar An Cheathrú Rua a hAon
+Bhí boscaí a líon
+Le mo chuid vótaísa amháin, bhí mé cinnte
+Ach trí vóta a bhí ann
+Mé féin is mo bhean
+Cé acu m'athair nó mo mháthair a thréig mé?
+
+Aon vóta déag
+A fuair mé i Leitir Móir na mbréag
+Cé gur gheall mé teach parlaiminte breá dóibh
+Nar mhionnaigh Nioclás Ó Conchubhair
+Go mbeinn tofa le sochar
+Ach más ea, ní fhaca mise aon mhóramh
+
+Agus téigh go dtí deabhal, Iorras Aithneach,
+Ní fheicfidh sibhse ach raithneach
+An chupóg in áit an chasino
+Nuair a thug sibh droim láimhe dom
+Le bhur seacht vóta súrach lom
+Chinn sibh nach blackjack a bheadh sibh ag imirt ach bingo
+
+Ó, tá an pholaitíocht lofa
+Nuair a fágadh mise gan bheith tofa
+Fear níos ionraicí riamh níor sheas os comhair daoine
+Nach ar mhaithe libh a chuir mé mé féin chun cinn?
+Agus cén dochar dá ndéanfainn féin corr phingin?
+Tuilleadh diabhail agaibh, tá sé mall a bheith mo chaoineadh
+
+Cibe é, tá rudaí anois feabhsaithe
+Tá mé ar ais ar na cigars agus brandy
+Mo ghrá thú, a Bhrian Lenihan, a leanna
+Mar tá mo chuid fiacha anois maite
+Cuma cén t-airgead atá caite
+Níl aon rógaire againn nach bhfuil slánaithe ag NAMA</div>
+            </div>
+        </article>
+
+        <!-- Ronnachaí (Rís) - AI music video by Rónán -->
+        <article class="writing-item">
+            <div class="writing-item-header" onclick="toggleWritingItem(this)">
+                <h3>Ronnachaí — Rís <span class="year"><span class="lang-ga">Físeán ceoil AI</span><span class="lang-en">AI music video</span></span> <span style="color: var(--orange);">▶</span></h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="writing-item-content">
+                <div class="lang-ga" style="margin-bottom: 1.5rem;">
+                    <p>Amhrán cumtha ag Rís - físeán cruthaithe agam le hintleacht shaorga.</p>
+                </div>
+                <div class="lang-en" style="margin-bottom: 1.5rem;">
+                    <p>Song composed by Rís - video created by me using artificial intelligence.</p>
+                </div>
+                <div class="video-embed">
+                    <iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gI8dE2ncJyc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <footer style="background: var(--ink); color: var(--cream); padding: 2rem var(--pad); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; display: flex; justify-content: space-between; gap: 2rem;">
+        <p>© 2026 Rónán Mac Con Iomaire</p>
+        <a href="index.html" style="color: inherit; text-decoration: none;">
+            <span class="lang-ga">Ar ais abhaile</span>
+            <span class="lang-en">Back home</span> ↑
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

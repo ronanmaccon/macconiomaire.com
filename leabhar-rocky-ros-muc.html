@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Ros Muc — Rónán Mac Con Iomaire</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Space+Grotesk:wght@300..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="scrolled">
+        <div class="header-inner">
+            <a href="index.html" class="logo">R. Mac Con Iomaire<sup>©2026</sup></a>
+            
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="mainNav">
+                <a href="index.html#moladh">
+                    <span class="lang-ga">Léirmheas</span>
+                    <span class="lang-en">Reviews</span>
+                </a>
+                <a href="index.html#leabhair" class="active">
+                    <span class="lang-ga">Leabhair</span>
+                    <span class="lang-en">Books</span>
+                </a>
+                <a href="index.html#scannain">
+                    <span class="lang-ga">Scannáin</span>
+                    <span class="lang-en">Films</span>
+                </a>
+                <a href="index.html#scribhneoireacht">
+                    <span class="lang-ga">Scríbhneoireacht</span>
+                    <span class="lang-en">Writing</span>
+                </a>
+                <a href="index.html#teagmhail">
+                    <span class="lang-ga">Teagmháil</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+                
+                <div class="lang-switch">
+                    <button id="btnGA" class="active" onclick="setLang('ga')">GA</button>
+                    <span class="sep">/</span>
+                    <button id="btnEN" onclick="setLang('en')">EN</button>
+                </div>
+            </nav>
+
+            <div class="header-meta">
+                <span class="time" id="localTime"></span>&nbsp;&nbsp;An Cheathrú Rua, IE
+            </div>
+        </div>
+    </header>
+
+    <section class="book-page">
+        <div class="section-inner book-page-grid">
+            <div class="book-page-cover">
+                <img src="images/rocky-ros-muc-cover.jpg" alt="Rocky Ros Muc">
+            </div>
+            <div class="book-page-body">
+                <a href="index.html#leabhair" class="back-link">←
+                    <span class="lang-ga">Ar ais</span>
+                    <span class="lang-en">Back</span>
+                </a>
+                <p class="micro"><span class="dot">•</span> 02.01 —
+                    <span class="lang-ga">Leabhair</span>
+                    <span class="lang-en">Books</span>
+                </p>
+                <h1 class="page-title">Rocky <em>Ros Muc</em></h1>
+                <p class="micro pub-line orange">Cló Iar-Chonnacht · 2013</p>
+            <p class="award-chip"><span class="lang-ga">Scríbhneoir Nua na Bliana — Gradaim Liteartha an Oireachtais 2014</span><span class="lang-en">New Writer of the Year — Oireachtas Literary Awards 2014</span></p>
+
+                <div class="book-body">
+                    <div class="lang-ga">
+                        <p>Ar an 19 Deireadh Fómhair 1984, throid Seán Ó Mainnín as Ros Muc, Conamara, do chraobh an domhain i Madison Square Garden, Nua Eabhrac.</p>
+                        <p>Bhí Ó Mainnín tar éis a bhealach a dhéanamh aníos dréimire na dornálaíochta, sa ngrád meáchain ba iomaíche i stair na dornálaíochta, do dheis ar chraobh mheánmheáchain éadrom an domhain i gcoinne Mike McCallum. Níor éirigh leis.</p>
+                        <p>Insíonn Rocky Ros Muc scéal atá brónach agus barrúil ag an am céanna, ag cur síos ar an mbealach gur éalaigh Ó Mainnín ó ghreim Whitey Bulger i South Boston chun craobh mheánmheáchain éadrom Mheiriceá a bhaint amach i 1983, ar an mbaint a bhí ag mafia na hIodáile lena choinneál amach as príosún agus na conarthaí a shínigh sé do throideanna i gcoinne Sugar Ray Leonard agus Tommy Hitman Hearns, troideanna nár tharla ar chúis amháin nó ar chúis eile.</p>
+                        <p><strong>57 troid ghairmiúil a bhí ag Seán Ó Mainnín. Níor leag duine ar bith riamh go talamh é.</strong></p>
+                    </div>
+                    <div class="lang-en">
+                        <p>Rocky Ros Muc became the fastest-selling Irish-language book ever when published in 2013.</p>
+                        <p>On October 19, 1984, Seán Mannion from Ros Muc, Connemara, fought for the world title in Madison Square Garden, New York. Mannion had climbed his way up from the lower rungs of one of the most competitive weight divisions in boxing history, for a crack at the light middleweight title against Mike McCallum.</p>
+                        <p>Rocky Ros Muc is a story of dark and light, of violence both within and outside of the four corners of the boxing ring. The book traces Seán Mannion's development as a boxer among Whitey Bulger's henchmen in South Boston to his winning the US light middleweight title in 1983, the Italian mafia's role in keeping him out of prison and the contracts he signed to fight Sugar Ray Leonard and Tommy Hitman Hearns, fights that didn't happen for what were tragicomical reasons.</p>
+                        <p><strong>Seán Mannion had 57 professional fights. Not one opponent managed to knock him to the canvas.</strong></p>
+                    </div>
+                </div>
+
+                <blockquote class="book-quote">
+                    <p>"Is cóir fáilte a chur roimh 'Rocky Ros Muc', ní hamháin toisc gur i nGaeilge atá sé, ach toisc gur leabhar den scoth é atá scríofa ar modh soiléir an iriseora mhaith."</p>
+                    <p class="quote-cite">— Colm Mac Séalaigh, <strong>Beo.ie</strong></p>
+                </blockquote>
+
+                <div class="book-actions">
+                    <a href="https://www.cic.ie/books/published-books/rocky-ros-muc-sean-o-mainnin" target="_blank" rel="noopener" class="btn-buy">
+                        <span class="lang-ga">Ceannaigh — Cló Iar-Chonnacht</span>
+                        <span class="lang-en">Buy — Cló Iar-Chonnacht</span>
+                    </a>
+                    <a href="http://www.cic.ie/images/uploads/docs/1_split_Rocky_Ros_Muc.pdf" target="_blank" rel="noopener" class="btn-ghost">
+                        <span class="lang-ga">Léigh sliocht</span>
+                        <span class="lang-en">Read an excerpt</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--ink); color: var(--cream); padding: 2rem var(--pad); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; display: flex; justify-content: space-between; gap: 2rem;">
+        <p>© 2026 Rónán Mac Con Iomaire</p>
+        <a href="index.html#leabhair" style="color: inherit; text-decoration: none;">
+            <span class="lang-ga">Ar ais chuig na leabhair</span>
+            <span class="lang-en">Back to books</span> ↑
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

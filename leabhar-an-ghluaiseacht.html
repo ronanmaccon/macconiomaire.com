@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Ghluaiseacht — Rónán Mac Con Iomaire</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Space+Grotesk:wght@300..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="scrolled">
+        <div class="header-inner">
+            <a href="index.html" class="logo">R. Mac Con Iomaire<sup>©2026</sup></a>
+            
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="mainNav">
+                <a href="index.html#moladh">
+                    <span class="lang-ga">Léirmheas</span>
+                    <span class="lang-en">Reviews</span>
+                </a>
+                <a href="index.html#leabhair" class="active">
+                    <span class="lang-ga">Leabhair</span>
+                    <span class="lang-en">Books</span>
+                </a>
+                <a href="index.html#scannain">
+                    <span class="lang-ga">Scannáin</span>
+                    <span class="lang-en">Films</span>
+                </a>
+                <a href="index.html#scribhneoireacht">
+                    <span class="lang-ga">Scríbhneoireacht</span>
+                    <span class="lang-en">Writing</span>
+                </a>
+                <a href="index.html#teagmhail">
+                    <span class="lang-ga">Teagmháil</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+                
+                <div class="lang-switch">
+                    <button id="btnGA" class="active" onclick="setLang('ga')">GA</button>
+                    <span class="sep">/</span>
+                    <button id="btnEN" onclick="setLang('en')">EN</button>
+                </div>
+            </nav>
+
+            <div class="header-meta">
+                <span class="time" id="localTime"></span>&nbsp;&nbsp;An Cheathrú Rua, IE
+            </div>
+        </div>
+    </header>
+
+    <section class="book-page">
+        <div class="section-inner book-page-grid">
+            <div class="book-page-cover">
+                <img src="images/an-ghluaiseacht-cover.jpg" alt="An Ghluaiseacht">
+            </div>
+            <div class="book-page-body">
+                <a href="index.html#leabhair" class="back-link">←
+                    <span class="lang-ga">Ar ais</span>
+                    <span class="lang-en">Back</span>
+                </a>
+                <p class="micro"><span class="dot">•</span> 02.03 —
+                    <span class="lang-ga">Leabhair</span>
+                    <span class="lang-en">Books</span>
+                </p>
+                <h1 class="page-title">An <em>Ghluaiseacht</em></h1>
+                <p class="micro pub-line orange">Cló Iar-Chonnacht · 2024</p>
+            <p class="award-chip"><span class="lang-ga">Gearrliostáilte — Gradam Uí Shúilleabháin 2025</span><span class="lang-en">Shortlisted — Gradam Uí Shúilleabháin 2025</span></p>
+
+                <div class="book-body">
+                    <div class="lang-ga">
+                        <p>In 1969, tháinig dream óg le chéile i gConamara chun tabhairt faoi fheachtas a d'athródh todhchaí na Gaeltachta go deo. Spreagtha ag agóidíocht a bhí ag tarlú ar fud na cruinne, bunaíodh Gluaiseacht Chearta Sibhialta na Gaeltachta mar sheasamh in aghaidh an feall a bhí á dhéanamh ar phobal imeallaithe agus a dteanga.</p>
+                        <p>Tugann an leabhar seo le chéile den chéad uair an scéal iomlán faoin nglúin radacach a sheas an fód ar son chearta mhuintir na Gaeltachta, agus an feachtas gearr, corraitheach a d'athraigh an Ghaeltacht ó bhun.</p>
+                    </div>
+                    <div class="lang-en">
+                        <p>In 1969, a protest against the recording of a TV quiz show in the west of Ireland quickly escalated into a movement that led to baton charges, bombing allegations and an attack on the Taoiseach's car.</p>
+                        <p>More significantly, it led to the reshaping of the future of the Irish language and of the communities in which the language was still the daily spoken form of communication.</p>
+                        <p>The story of Gluaiseacht Chearta Sibhialta na Gaeltachta [Gaeltacht Civil Rights Movement] is captured in An Ghluaiseacht, published by Cló Iar-Chonnacht in 2024.</p>
+                    </div>
+                </div>
+
+                <blockquote class="book-quote">
+                    <p>"A highlight [of 2025] is Rónán Mac Con Iomaire's An Ghluaiseacht: Scéal Chearta Sibhialta na Gaeltachta... Mac Con Iomaire writes like a novelist, ensuring the history is riveting."</p>
+                    <p class="quote-cite">— Eilís Ní Dhuibhne, <strong>Irish Times</strong></p>
+                </blockquote>
+                <blockquote class="book-quote">
+                    <p>"Is cur síos cuimsitheach, so-léite, sár-scríofa é 'An Ghluaiseacht'. Cuireann stíl Mhic Con Iomaire Sebastian Junger, údar an 'A Perfect Storm', nó stábla scríbhneoirí an New Yorker i gcuimhne domh. Is aoibhinn liom mar éiríonn leis an údar sinn a chur i lár an aicsin agus é ag cur síos ar tharlúintí na linne. Pléisiúr (fada, 400+ leathanach) 'An Ghluaiseacht' á léamh."</p>
+                    <p class="quote-cite">— Máirtín Ó Muilleoir, <strong>Andersonstown News</strong></p>
+                </blockquote>
+                <blockquote class="book-quote">
+                    <p>"Níl aon amhras ormsa ach gur leabhar í seo a mbeidh mise ag póirseáil inti go minic agus déarfainn gur beag teach i gConamara nach mbeidh sí ann an Nollaig seo agus is maith an oidhe sin ar an dream a spreag í. Is iontach go deo an chomaoin atá curtha ag Rónán Mac Con Iomaire orainn an t-ábhar seo a chur i gceann a chéile. Nach ait go bhfuil dream óg eile in 2024 ag éileamh cuid de na cearta céanna?"</p>
+                    <p class="quote-cite">— Máire Ní Fhinneadha, <strong>Tuairisc.ie</strong></p>
+                </blockquote>
+
+                <div class="book-actions">
+                    <a href="https://cic.ie/an-ghluaiseacht-sceal-chearta-sibhialta-na-gaeltachta/" target="_blank" rel="noopener" class="btn-buy">
+                        <span class="lang-ga">Ceannaigh — Cló Iar-Chonnacht</span>
+                        <span class="lang-en">Buy — Cló Iar-Chonnacht</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--ink); color: var(--cream); padding: 2rem var(--pad); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; display: flex; justify-content: space-between; gap: 2rem;">
+        <p>© 2026 Rónán Mac Con Iomaire</p>
+        <a href="index.html#leabhair" style="color: inherit; text-decoration: none;">
+            <span class="lang-ga">Ar ais chuig na leabhair</span>
+            <span class="lang-en">Back to books</span> ↑
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
